@@ -1,6 +1,17 @@
 ---
 name: react-bits-pro
-description: Manual-invocation skill. Load only when the user explicitly asks for the react-bits-pro skill or references it by name, e.g. react bits, reactbits, or @reactbits-pro. Do not auto-load for general component or UI work.
+description: >
+  Install and integrate React Bits Pro premium UI components, page-section
+  blocks, and landing-page templates into React/Next.js apps via the shadcn
+  registry CLI with license-key authentication. Use this skill whenever the user
+  wants to add animated components (WebGL/shader backgrounds, GSAP and Motion
+  animations, 3D effects, cursor trails, text animations, cards, carousels,
+  galleries), pre-built page sections (hero, features, pricing, navigation,
+  footer, FAQ, CTA, auth, stats, blog, contact, social proof, about, waitlist,
+  showcase, how-it-works, download, ecommerce, profile, 404), or full
+  landing-page templates. Also use when the user mentions "react bits",
+  "reactbits", "@reactbits-starter", or "@reactbits-pro", or asks for premium
+  animated React components, even if they do not name the library directly.
 license: MIT
 ---
 

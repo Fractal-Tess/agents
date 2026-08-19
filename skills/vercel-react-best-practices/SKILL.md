@@ -1,6 +1,6 @@
 ---
 name: vercel-react-best-practices
-description: Manual-invocation skill. Load only when the user explicitly asks for the vercel-react-best-practices skill or references it by name. Do not auto-load for general React or Next.js work.
+description: React and Next.js performance optimization rules from Vercel Engineering. Use when writing, reviewing, or refactoring React code for speed: data fetching, bundle size, re-renders, waterfalls, server/client performance. Not a general React style guide; pair with vercel-composition-patterns for component architecture.
 license: MIT
 metadata:
   author: vercel

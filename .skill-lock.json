@@ -24,7 +24,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/react-best-practices/SKILL.md",
-      "skillFolderHash": "559c0ee9a032020845ca375cc9dfdcf37d581959",
+      "skillFolderHash": "9bf99ee80e0ce2f63012795bc4d3a2d624c63cde",
       "installedAt": "2026-08-19T00:00:00.000Z",
       "updatedAt": "2026-08-19T00:00:00.000Z"
     },
@@ -123,7 +123,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/reactbits/ReactBits.git",
       "skillPath": "SKILL.md",
-      "skillFolderHash": "05047929ea0a8dd6cc83ea19b789a87b77380973",
+      "skillFolderHash": "d1d546c5babc29b0566d8bb0d3428a5d822945b1",
       "installedAt": "2026-08-19T00:00:00.000Z",
       "updatedAt": "2026-08-19T00:00:00.000Z"
     }
