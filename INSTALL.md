@@ -1,28 +1,57 @@
 # Install
 
-These are plain skill folders. There is no build step and no package manager.
+Skills live in `skills/<name>/SKILL.md`. Standard layout, no build step.
 
-## Into an agent's skills directory
+## Get the repo
 
-Most coding agents load skills from a directory of `SKILL.md` files. Copy the folder:
+Clone it (private, SSH):
 
 ```sh
-cp -r skills/<name> ~/.claude/skills/
-cp -r skills/<name> ~/.codex/skills/
+git clone git@github.com:Fractal-Tess/agents.git ~/.agents
 ```
 
-Substitute the agent's skills path. Known paths on this machine: `~/.claude/skills`, `~/.codex/skills`, `~/.omp/agent/skills`.
+To update, pull:
 
-## omp
+```sh
+git -C ~/.agents pull
+```
 
-The omp harness loads the live set from `~/.omp/agent/skills`. To change what runs, edit there. To keep a versioned copy, edit here and sync.
+This repo is the source of truth. The copy on disk is whatever the latest commit has; `git pull` is the only update path that keeps both in sync.
 
-## Adding a new skill
+## Automatic loading
 
-1. Create `skills/<name>/SKILL.md` with `name` and `description` in the frontmatter.
-2. Add a `.skill-lock.json` entry with the source, or leave it out for local-only skills.
-3. Commit.
+These harnesses load skills from `.agents/skills` (project) and `~/.agents/skills` (user) with no setup:
+
+| Harness | Reads `.agents`? | Source |
+|---|---|---|
+| Codex CLI | yes, project + `~/.agents/skills` | learn.chatgpt.com/docs/build-skills |
+| Gemini CLI | yes, `.agents/skills` beats `.gemini/skills` | geminicli.com/docs/cli/skills |
+| Cursor | yes, project + `~/.agents/skills` | cursor.com/docs/skills.md |
+| Windsurf (Devin Desktop) | yes, cross-agent compat | docs.devin.ai/desktop/cascade/skills.md |
+| Amp | yes, project + `~/.agents/skills` | ampcode.com/manual/agent-skills.md |
+| OpenCode | yes, project + `~/.agents/skills` | opencode.ai/docs/skills |
+| Roo Code | yes, project + `~/.agents/skills` | docs.roocode.com/features/skills |
+| Cline | yes, in source; undocumented | cline/cline, apps/vscode/src/core/storage/skill-directories.ts |
+| omp | yes, native `.agents/skills`, `.agents/rules` | embedded in omp binary |
+
+If yours is in this list, clone into `~/.agents` or use the repo as the project `.agents/` directory and you are done. Skills are picked up on the next session.
+
+## Harnesses that do not load .agents
+
+- **Claude Code** — reads only `.claude/skills` and `~/.claude/skills`; the docs contain no `.agents` path. It also does not read AGENTS.md (docs say "Claude Code reads CLAUDE.md, not AGENTS.md"). Fix: symlink the skills in once:
+
+  ```sh
+  ln -s ~/.agents/skills/* ~/.claude/skills/
+  ```
+
+  Symlinked skill dirs are followed. Sources: code.claude.com/docs/en/skills, code.claude.com/docs/en/memory.
+
+- **Qwen Code** — scans `.qwen/skills` and `~/.qwen/skills` only. Shared dirs need explicit config: set `"skills.directories": ["~/.agents/skills"]` in settings.json. Source: qwenlm.github.io/qwen-code-docs, weekly update 2026-07-30.
+
+- **JetBrains Junie** — scans `.junie/skills` (project) and `~/.junie/skills` (user). It detects other agents' skill dirs only to suggest an import, never loads them. Fix: `ln -s ~/.agents/skills/* ~/.junie/skills/`. Source: junie.jetbrains.com/docs/agent-skills.html.
+
+- **Aider** — no skills system at all. Load a conventions file explicitly with `/read` or `--read`. Source: aider.chat/docs/usage/conventions.html.
 
 ## Removing a skill
 
-Delete the folder and its lock entry. The repo is private; deletions are recoverable from git history.
+Delete the folder and its `.skill-lock.json` entry, then commit. The repo is the durable copy; git history is the undo.

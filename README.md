@@ -2,6 +2,12 @@
   <img src="assets/logo.png" alt="Agent skills" width="160" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/Fractal-Tess/agents"><img src="https://img.shields.io/badge/github-Fractal_Tess%2Fagents-181717?logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e" alt="MIT license"></a>
+  <a href="skills/"><img src="https://img.shields.io/badge/skills-13-f97316" alt="13 skills"></a>
+</p>
+
 # Agent skills
 
 Agent skills for coding assistants, kept in `~/.agents` and versioned here.
@@ -26,4 +32,4 @@ Full setup, per-agent paths, and sync instructions: [INSTALL.md](INSTALL.md)
 
 ## License
 
-No license yet. This is a personal repo; ask before reusing the skill text.
+MIT. See [LICENSE](LICENSE). The skills inside are third-party where noted; their terms apply to that content.
