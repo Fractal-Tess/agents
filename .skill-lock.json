@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "skills": {
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-02-09T19:41:49.891Z",
+      "updatedAt": "2026-02-09T19:41:49.891Z"
+    },
+    "vercel-react-native-skills": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-native-skills/SKILL.md",
+      "skillFolderHash": "8b4c6a51914e2111ab6f4f00cb81778652aa241d",
+      "installedAt": "2026-02-09T19:41:50.031Z",
+      "updatedAt": "2026-02-09T19:41:50.031Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "079b06a135401704ea94ab74c7c9d86c92ba259f",
+      "installedAt": "2026-02-09T19:41:50.287Z",
+      "updatedAt": "2026-02-09T19:41:50.287Z"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/composition-patterns/SKILL.md",
+      "skillFolderHash": "bf90d0a4b83ea054653350f9c67f6de235d3a368",
+      "installedAt": "2026-02-09T19:41:50.477Z",
+      "updatedAt": "2026-02-09T19:41:50.477Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-02-09T19:41:55.967Z",
+      "updatedAt": "2026-02-09T19:41:55.967Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "534183ba408692754ff5470166200d672209e96c",
+      "installedAt": "2026-02-09T19:51:24.601Z",
+      "updatedAt": "2026-02-09T19:51:24.601Z"
+    },
+    "frontend-design": {
+      "source": "mager/frontend-design",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mager/frontend-design.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "ffa6526da86ca8d5b5441311b22a3bf09be7439b",
+      "installedAt": "2026-03-09T20:54:20.120Z",
+      "updatedAt": "2026-03-09T20:54:20.120Z"
+    },
+    "graphite": {
+      "source": "withgraphite/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/withgraphite/agent-skills.git",
+      "skillPath": "skills/graphite/SKILL.md",
+      "skillFolderHash": "404bf8d36e67273abeb7fbbf66efb2ba3ef15375",
+      "installedAt": "2026-03-17T18:03:28.483Z",
+      "updatedAt": "2026-03-17T18:03:28.483Z"
+    },
+    "caveman": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "caveman/SKILL.md",
+      "skillFolderHash": "825e13085d1515fe67881b2123f3bf9b34c26154",
+      "installedAt": "2026-04-13T23:20:27.685Z",
+      "updatedAt": "2026-04-13T23:20:27.685Z"
+    },
+    "unslop": {
+      "source": "poteto/noodle",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/poteto/noodle.git",
+      "skillPath": ".agents/skills/unslop/SKILL.md",
+      "skillFolderHash": "f73321db317538a57551eb02a57a2c51aecd8e47",
+      "installedAt": "2026-08-19T00:00:00.000Z",
+      "updatedAt": "2026-08-19T00:00:00.000Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "codex",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode"
+  ]
+}

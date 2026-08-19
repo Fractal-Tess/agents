@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: agent-skills
+created: 2026-07-26T19:43:55+03:00
