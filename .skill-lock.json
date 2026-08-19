@@ -117,6 +117,15 @@
       "skillFolderHash": "5c4e2c9af3bd04e5465a5339ca46f66cfa555eb4",
       "installedAt": "2026-08-19T00:00:00.000Z",
       "updatedAt": "2026-08-19T00:00:00.000Z"
+    },
+    "react-bits-pro": {
+      "source": "reactbits/ReactBits",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/reactbits/ReactBits.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "ab274cb320fe183384a9fd1e3ffded2c0b78c96c",
+      "installedAt": "2026-08-19T00:00:00.000Z",
+      "updatedAt": "2026-08-19T00:00:00.000Z"
     }
   },
   "dismissed": {
