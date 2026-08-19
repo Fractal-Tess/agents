@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/Fractal-Tess/agents"><img src="https://img.shields.io/badge/github-Fractal_Tess%2Fagents-181717?logo=github&logoColor=white" alt="GitHub"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e" alt="MIT license"></a>
-  <a href="skills/"><img src="https://img.shields.io/badge/skills-13-f97316" alt="13 skills"></a>
+  <a href="skills/"><img src="https://img.shields.io/badge/skills-16-f97316" alt="16 skills"></a>
 </p>
 
 # Agent skills
@@ -20,10 +20,10 @@ This repo holds what I run my agents with: one folder per skill in the standard 
 
 ## Fastest way in
 
-Copy one skill into your agent's skills directory:
+Clone it into `~/.agents`. Most harnesses pick up skills from there automatically:
 
 ```sh
-cp -r skills/unslop ~/.claude/skills/
+git clone git@github.com:Fractal-Tess/agents.git ~/.agents
 ```
 
 ## Install
