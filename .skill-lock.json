@@ -1,23 +1,23 @@
 {
   "version": 3,
   "skills": {
-    "web-design-guidelines": {
-      "source": "vercel-labs/agent-skills",
+    "unslop": {
+      "source": "poteto/noodle",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
-      "skillPath": "skills/web-design-guidelines/SKILL.md",
-      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
-      "installedAt": "2026-02-09T19:41:49.891Z",
-      "updatedAt": "2026-02-09T19:41:49.891Z"
+      "sourceUrl": "https://github.com/poteto/noodle.git",
+      "skillPath": ".agents/skills/unslop/SKILL.md",
+      "skillFolderHash": "f73321db317538a57551eb02a57a2c51aecd8e47",
+      "installedAt": "2026-08-19T00:00:00.000Z",
+      "updatedAt": "2026-08-19T00:00:00.000Z"
     },
-    "vercel-react-native-skills": {
-      "source": "vercel-labs/agent-skills",
+    "react-doctor": {
+      "source": "millionco/react-doctor",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
-      "skillPath": "skills/react-native-skills/SKILL.md",
-      "skillFolderHash": "8b4c6a51914e2111ab6f4f00cb81778652aa241d",
-      "installedAt": "2026-02-09T19:41:50.031Z",
-      "updatedAt": "2026-02-09T19:41:50.031Z"
+      "sourceUrl": "https://github.com/millionco/react-doctor.git",
+      "skillPath": "skills/react-doctor/SKILL.md",
+      "skillFolderHash": "2c3c345c1e7242003db85ab4164ae8dff9d11027",
+      "installedAt": "2026-08-19T00:00:00.000Z",
+      "updatedAt": "2026-08-19T00:00:00.000Z"
     },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
@@ -55,48 +55,12 @@
       "installedAt": "2026-02-09T19:51:24.601Z",
       "updatedAt": "2026-02-09T19:51:24.601Z"
     },
-    "frontend-design": {
-      "source": "mager/frontend-design",
+    "design-taste-frontend": {
+      "source": "leonxlnx/taste-skill",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/mager/frontend-design.git",
-      "skillPath": "SKILL.md",
-      "skillFolderHash": "ffa6526da86ca8d5b5441311b22a3bf09be7439b",
-      "installedAt": "2026-03-09T20:54:20.120Z",
-      "updatedAt": "2026-03-09T20:54:20.120Z"
-    },
-    "graphite": {
-      "source": "withgraphite/agent-skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/withgraphite/agent-skills.git",
-      "skillPath": "skills/graphite/SKILL.md",
-      "skillFolderHash": "404bf8d36e67273abeb7fbbf66efb2ba3ef15375",
-      "installedAt": "2026-03-17T18:03:28.483Z",
-      "updatedAt": "2026-03-17T18:03:28.483Z"
-    },
-    "caveman": {
-      "source": "juliusbrussee/caveman",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
-      "skillPath": "caveman/SKILL.md",
-      "skillFolderHash": "825e13085d1515fe67881b2123f3bf9b34c26154",
-      "installedAt": "2026-04-13T23:20:27.685Z",
-      "updatedAt": "2026-04-13T23:20:27.685Z"
-    },
-    "unslop": {
-      "source": "poteto/noodle",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/poteto/noodle.git",
-      "skillPath": ".agents/skills/unslop/SKILL.md",
-      "skillFolderHash": "f73321db317538a57551eb02a57a2c51aecd8e47",
-      "installedAt": "2026-08-19T00:00:00.000Z",
-      "updatedAt": "2026-08-19T00:00:00.000Z"
-    },
-    "react-doctor": {
-      "source": "millionco/react-doctor",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/millionco/react-doctor.git",
-      "skillPath": "skills/react-doctor/SKILL.md",
-      "skillFolderHash": "2c3c345c1e7242003db85ab4164ae8dff9d11027",
+      "sourceUrl": "https://github.com/leonxlnx/taste-skill.git",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "skillFolderHash": "5c4e2c9af3bd04e5465a5339ca46f66cfa555eb4",
       "installedAt": "2026-08-19T00:00:00.000Z",
       "updatedAt": "2026-08-19T00:00:00.000Z"
     },
@@ -106,15 +70,6 @@
       "sourceUrl": "https://github.com/pbakaus/impeccable.git",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
       "skillFolderHash": "97b017a90f4a501214b0b7daa8ff5e5371faa4ff",
-      "installedAt": "2026-08-19T00:00:00.000Z",
-      "updatedAt": "2026-08-19T00:00:00.000Z"
-    },
-    "design-taste-frontend": {
-      "source": "leonxlnx/taste-skill",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/leonxlnx/taste-skill.git",
-      "skillPath": "skills/taste-skill/SKILL.md",
-      "skillFolderHash": "5c4e2c9af3bd04e5465a5339ca46f66cfa555eb4",
       "installedAt": "2026-08-19T00:00:00.000Z",
       "updatedAt": "2026-08-19T00:00:00.000Z"
     },
