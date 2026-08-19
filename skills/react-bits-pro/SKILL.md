@@ -1,5 +1,6 @@
 ---
 name: react-bits-pro
+description: Manual-invocation skill. Load only when the user explicitly asks for the react-bits-pro skill or references it by name, e.g. react bits, reactbits, or @reactbits-pro. Do not auto-load for general component or UI work.
 license: MIT
 ---
 
