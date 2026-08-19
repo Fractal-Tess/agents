@@ -1,9 +1,9 @@
 ---
-name: fractal-tess-visual-style
+name: ft-visual-style
 description: Create image directions and prompts in Fractal Tess's dark, technical, sculptural visual language. Use for project logos, hero art, social cards, product illustrations, and image-generation prompts that should feel consistent with Faber, Znake, ClipSync, Scorch, or Shadoword.
 ---
 
-# Fractal Tess Visual Style
+# FT Visual Style
 
 ## Core direction
 

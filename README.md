@@ -1,25 +1,29 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Agent skills" width="160" />
+</p>
+
 # Agent skills
 
-What I keep in `~/.agents`: skills for coding agents, plus the install registry.
+Agent skills for coding assistants, kept in `~/.agents` and versioned here.
 
-## What's here
+This repo holds what I run my agents with: one folder per skill in the standard `skills/<name>/SKILL.md` layout, plus `.skill-lock.json`, which records where each skill came from and when it was installed. The skills here are the same set the omp harness loads, so the repo works as a durable, diffable copy.
 
-- `skills/<name>/SKILL.md` — one folder per skill, standard layout. Point your agent at it or copy it into its own skills directory.
-- `.skill-lock.json` — the install registry: which skill came from where, and when it was installed.
+- `unslop` (from [poteto/noodle](https://github.com/poteto/noodle)) de-AIs prose: cuts em dashes, AI vocabulary, significance inflation, and chatbot filler
+- `ft-readme-style` and `ft-visual-style` keep project READMEs and image prompts in a consistent voice
+- the rest are the omp session skills: agent-browser, impeccable, design-taste-frontend, research, react-bits-pro, scorch, svelte, rust, and utility skills
 
-The `unslop` skill came from [poteto/noodle](https://github.com/poteto/noodle). The rest are the skills the omp harness loads at `~/.omp/agent/skills`; this repo is a durable copy, not the live source.
+## Fastest way in
 
-## Installing a skill
-
-Copy the folder into your agent's skills directory:
+Copy one skill into your agent's skills directory:
 
 ```sh
 cp -r skills/unslop ~/.claude/skills/
 ```
 
-Or, for agent CLIs that support it, point at the repo path directly.
+## Install
 
-## Notes
+Full setup, per-agent paths, and sync instructions: [INSTALL.md](INSTALL.md)
 
-- Keep the lock file in sync when you add or remove skills.
-- The harness resolves `skill://` names from `~/.omp/agent/skills`, not from this repo. Edit there if you want a skill to change live; edit here if you want the change versioned.
+## License
+
+No license yet. This is a personal repo; ask before reusing the skill text.

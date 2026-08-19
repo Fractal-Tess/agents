@@ -1,9 +1,9 @@
 ---
-name: fractal-tess-readme-style
+name: ft-readme-style
 description: Write or simplify project READMEs into a fast-scanning project front page: centered logo, compact badges, a clear explanation, short examples, and links to focused supporting documents. Use when creating, rewriting, or reviewing a README.
 ---
 
-# Fractal Tess README Style
+# FT README Style
 
 A README is a project's front door, not its complete manual. A reader should understand the project, whether it matters to them, and what to try next in under a minute.
 
