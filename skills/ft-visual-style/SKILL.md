@@ -50,3 +50,22 @@ Example direction:
 - Dense decoration across the whole canvas.
 - Rendered text, logos copied from an existing project, or project-specific mascots unless explicitly requested.
 - Treating all projects as violet: the shared language is dark restraint and concentrated identity color, not one fixed palette.
+
+## Cost-aware generation
+
+fal gpt-image-2 bills per size and quality. Drafts are cheap; finals are not. Never default to high.
+
+Reference pricing (per image, from fal):
+
+| Size | low | medium | high |
+|---|---|---|---|
+| 1024x768 | $0.005 | $0.037 | $0.145 |
+| 1024x1024 | $0.006 | $0.053 | $0.211 |
+| 1024x1536 | $0.005 | $0.042 | $0.165 |
+
+Protocol:
+
+1. Draft default: `image_size: "square"` (512x512), `quality: "low"`, `output_format: "png"`, `num_images: 1`. A 512x512 low draft costs a fraction of a cent.
+2. Present the result, then ask the user before any pricier regeneration. Quote the price of the upgrade, e.g. "regenerate at medium 1024x1024? +$0.047".
+3. Use `image_size: "square_hd"` (1024x1024) and `quality: "medium"` only on explicit request. Reserve `quality: "high"` for final hero assets.
+4. The model ignores transparent-background prompts: it always paints an opaque field. Expect it and plan post-processing: global color key (ImageMagick `-fuzz 7% -transparent`) for uniform fields, `fal-ai/imageutils/rembg` for photos. Saliency removers drop thin structural lines, so keying beats rembg for line-art logos.
